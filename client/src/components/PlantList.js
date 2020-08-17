@@ -26,8 +26,17 @@ export default class PlantList extends Component {
       .catch((err) => console.log("This is the Error:", err))
     };
 
+    // This is invoked inmediately after the component is  updating 
+    componentDidUpdate(prepvProps, prevState) {
+      console.log("CDU is invoked")
+      if (prevState.plants !== this.state.plants) {
+        console.log("Plants State has changed");
+      }
+    }
+
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
   render() {
+    console.log("Render is called")
     return (
       <main className="plant-list">
         {this.state?.plants?.map((plant) => (

@@ -251,3 +251,36 @@ pre {
   color: #0e101c;
   border-bottom: 2px solid !important;
 }
+
+/* this part is for DarkMode style inside the page */
+.dark-mode {
+  background-color: #4682B4;
+}
+
+/* This one is for the circle around the circle */
+.dark-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+  margin: auto 10px auto auto ;
+}
+
+/* This one is for the circle to the left */
+.toggle {
+  background: #cf0;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+  border: .5px solid black;
+}
+
+/* and this one is for the circle to the right */
+.toggled {
+  left: 18px;
+}
